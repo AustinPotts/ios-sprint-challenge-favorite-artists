@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		457153942425130B00F1CDC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153932425130A00F1CDC5 /* AppDelegate.m */; };
 		457153972425130B00F1CDC5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153962425130B00F1CDC5 /* SceneDelegate.m */; };
-		4571539A2425130B00F1CDC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153992425130B00F1CDC5 /* ViewController.m */; };
 		4571539D2425130B00F1CDC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4571539B2425130B00F1CDC5 /* Main.storyboard */; };
 		4571539F2425130C00F1CDC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4571539E2425130C00F1CDC5 /* Assets.xcassets */; };
 		457153A22425130C00F1CDC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 457153A02425130C00F1CDC5 /* LaunchScreen.storyboard */; };
 		457153A52425130D00F1CDC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153A42425130D00F1CDC5 /* main.m */; };
+		457153AE2425153600F1CDC5 /* PEIArtistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153AD2425153600F1CDC5 /* PEIArtistTableViewController.m */; };
+		457153B12425154B00F1CDC5 /* PEIArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153B02425154B00F1CDC5 /* PEIArtistDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +23,15 @@
 		457153932425130A00F1CDC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		457153952425130B00F1CDC5 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		457153962425130B00F1CDC5 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		457153982425130B00F1CDC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		457153992425130B00F1CDC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4571539C2425130B00F1CDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4571539E2425130C00F1CDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		457153A12425130C00F1CDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		457153A32425130D00F1CDC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		457153A42425130D00F1CDC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		457153AC2425153600F1CDC5 /* PEIArtistTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIArtistTableViewController.h; sourceTree = "<group>"; };
+		457153AD2425153600F1CDC5 /* PEIArtistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtistTableViewController.m; sourceTree = "<group>"; };
+		457153AF2425154B00F1CDC5 /* PEIArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIArtistDetailViewController.h; sourceTree = "<group>"; };
+		457153B02425154B00F1CDC5 /* PEIArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtistDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +64,11 @@
 		457153912425130A00F1CDC5 /* PEIFavoriteArtist */ = {
 			isa = PBXGroup;
 			children = (
+				457153AB2425150400F1CDC5 /* View Controllers */,
 				457153922425130A00F1CDC5 /* AppDelegate.h */,
 				457153932425130A00F1CDC5 /* AppDelegate.m */,
 				457153952425130B00F1CDC5 /* SceneDelegate.h */,
 				457153962425130B00F1CDC5 /* SceneDelegate.m */,
-				457153982425130B00F1CDC5 /* ViewController.h */,
-				457153992425130B00F1CDC5 /* ViewController.m */,
 				4571539B2425130B00F1CDC5 /* Main.storyboard */,
 				4571539E2425130C00F1CDC5 /* Assets.xcassets */,
 				457153A02425130C00F1CDC5 /* LaunchScreen.storyboard */,
@@ -74,6 +76,17 @@
 				457153A42425130D00F1CDC5 /* main.m */,
 			);
 			path = PEIFavoriteArtist;
+			sourceTree = "<group>";
+		};
+		457153AB2425150400F1CDC5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				457153AC2425153600F1CDC5 /* PEIArtistTableViewController.h */,
+				457153AD2425153600F1CDC5 /* PEIArtistTableViewController.m */,
+				457153AF2425154B00F1CDC5 /* PEIArtistDetailViewController.h */,
+				457153B02425154B00F1CDC5 /* PEIArtistDetailViewController.m */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4571539A2425130B00F1CDC5 /* ViewController.m in Sources */,
+				457153B12425154B00F1CDC5 /* PEIArtistDetailViewController.m in Sources */,
+				457153AE2425153600F1CDC5 /* PEIArtistTableViewController.m in Sources */,
 				457153942425130B00F1CDC5 /* AppDelegate.m in Sources */,
 				457153A52425130D00F1CDC5 /* main.m in Sources */,
 				457153972425130B00F1CDC5 /* SceneDelegate.m in Sources */,

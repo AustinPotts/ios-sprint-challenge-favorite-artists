@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ArtistDetailViewController.h
 //  PEIFavoriteArtist
 //
 //  Created by Austin Potts on 3/20/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+NS_ASSUME_NONNULL_BEGIN
 
+@interface PEIArtistDetailViewController : UIViewController
 
 @end
 
+NS_ASSUME_NONNULL_END
