@@ -10,7 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PEIArtistDetailViewController : UIViewController
+@class PEIArtistController;
+@class PEIArtist;
+
+@interface PEIArtistDetailViewController : UIViewController <UISearchBarDelegate>
+
+@property PEIArtistController *controller;
+@property PEIArtist *artist;
 
 @end
 

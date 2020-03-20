@@ -10,8 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class PEIArtistController;
+@class PEIArtist;
+
 @interface PEIArtistTableViewController : UITableViewController
 
+@property PEIArtist *artist;
+@property (nonatomic)PEIArtistController *controller;
 
 
 

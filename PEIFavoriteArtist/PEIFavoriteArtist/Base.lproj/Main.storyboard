@@ -127,7 +127,7 @@
                     <navigationItem key="navigationItem" title="Artist" id="Zju-IJ-IPG">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="sJ2-2T-Rgm">
                             <connections>
-                                <action selector="saveButtonTapped:" destination="IAe-ed-zY9" id="hj8-OO-5Re"/>
+                                <action selector="saveButtonTapped:" destination="IAe-ed-zY9" id="SkB-oy-4E4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -162,6 +162,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BId-pd-zVg"/>
+        <segue reference="Gir-ZA-EV0"/>
     </inferredMetricsTieBreakers>
 </document>
