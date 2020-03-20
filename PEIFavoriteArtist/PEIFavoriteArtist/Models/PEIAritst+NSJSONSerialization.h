@@ -9,17 +9,18 @@
 
 
 
-#import "PEIAritst.h"
+#import "PEIArtist.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PEIAritst (NSJSONSerialization)
+// Category for JSONSerialization
+@interface PEIArtist (NSJSONSerialization)
 
 
 // Declaration of Dictionary Init
 - (instancetype) initWithDictionary: (NSDictionary *)dictionary;
 
-//Declaration of Dictionary called artistData 
+//Declaration of Dictionary called artistData
 -(NSDictionary *)artistData;
 
 @end

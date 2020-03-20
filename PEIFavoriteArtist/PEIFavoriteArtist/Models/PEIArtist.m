@@ -6,9 +6,9 @@
 //  Copyright © 2020 Lambda School. All rights reserved.
 //
 
-#import "PEIAritst.h"
+#import "PEIArtist.h"
 
-@implementation PEIAritst
+@implementation PEIArtist
 
 
 //Function Implementation 

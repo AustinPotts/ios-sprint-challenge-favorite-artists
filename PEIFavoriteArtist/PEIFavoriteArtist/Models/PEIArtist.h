@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PEIAritst : NSObject
+@interface PEIArtist : NSObject
 
 //Properties 
 @property NSString *artistName;

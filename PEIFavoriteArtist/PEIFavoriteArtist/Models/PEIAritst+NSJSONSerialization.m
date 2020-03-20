@@ -10,8 +10,8 @@
 
 
 
-
-@implementation PEIAritst (NSJSONSerialization)
+// Category for JSON Serialization
+@implementation PEIArtist (NSJSONSerialization)
 
 
 // Implement function that was declared in .h
@@ -36,7 +36,7 @@
 - (NSDictionary *) artistData {
     
     
-    // Creating Dictionary 
+    // Creating Dictionary
     NSMutableDictionary *artistData = [NSMutableDictionary dictionary];
     
     // Casting the year formed

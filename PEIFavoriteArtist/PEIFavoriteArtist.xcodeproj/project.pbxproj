@@ -15,8 +15,9 @@
 		457153A52425130D00F1CDC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153A42425130D00F1CDC5 /* main.m */; };
 		457153AE2425153600F1CDC5 /* PEIArtistTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153AD2425153600F1CDC5 /* PEIArtistTableViewController.m */; };
 		457153B12425154B00F1CDC5 /* PEIArtistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153B02425154B00F1CDC5 /* PEIArtistDetailViewController.m */; };
-		457153B524251CF000F1CDC5 /* PEIAritst.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153B424251CF000F1CDC5 /* PEIAritst.m */; };
+		457153B524251CF000F1CDC5 /* PEIArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153B424251CF000F1CDC5 /* PEIArtist.m */; };
 		457153B8242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153B7242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.m */; };
+		457153BC24252D4E00F1CDC5 /* PEIArtistController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457153BB24252D4E00F1CDC5 /* PEIArtistController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,10 +35,12 @@
 		457153AD2425153600F1CDC5 /* PEIArtistTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtistTableViewController.m; sourceTree = "<group>"; };
 		457153AF2425154B00F1CDC5 /* PEIArtistDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIArtistDetailViewController.h; sourceTree = "<group>"; };
 		457153B02425154B00F1CDC5 /* PEIArtistDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtistDetailViewController.m; sourceTree = "<group>"; };
-		457153B324251CF000F1CDC5 /* PEIAritst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIAritst.h; sourceTree = "<group>"; };
-		457153B424251CF000F1CDC5 /* PEIAritst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIAritst.m; sourceTree = "<group>"; };
+		457153B324251CF000F1CDC5 /* PEIArtist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIArtist.h; sourceTree = "<group>"; };
+		457153B424251CF000F1CDC5 /* PEIArtist.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtist.m; sourceTree = "<group>"; };
 		457153B6242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PEIAritst+NSJSONSerialization.h"; sourceTree = "<group>"; };
 		457153B7242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PEIAritst+NSJSONSerialization.m"; sourceTree = "<group>"; };
+		457153BA24252D4E00F1CDC5 /* PEIArtistController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PEIArtistController.h; sourceTree = "<group>"; };
+		457153BB24252D4E00F1CDC5 /* PEIArtistController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PEIArtistController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +73,7 @@
 		457153912425130A00F1CDC5 /* PEIFavoriteArtist */ = {
 			isa = PBXGroup;
 			children = (
+				457153B924252D3200F1CDC5 /* Model Controller */,
 				457153B224251CD700F1CDC5 /* Models */,
 				457153AB2425150400F1CDC5 /* View Controllers */,
 				457153922425130A00F1CDC5 /* AppDelegate.h */,
@@ -99,12 +103,21 @@
 		457153B224251CD700F1CDC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				457153B324251CF000F1CDC5 /* PEIAritst.h */,
-				457153B424251CF000F1CDC5 /* PEIAritst.m */,
+				457153B324251CF000F1CDC5 /* PEIArtist.h */,
+				457153B424251CF000F1CDC5 /* PEIArtist.m */,
 				457153B6242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.h */,
 				457153B7242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		457153B924252D3200F1CDC5 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				457153BA24252D4E00F1CDC5 /* PEIArtistController.h */,
+				457153BB24252D4E00F1CDC5 /* PEIArtistController.m */,
+			);
+			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,7 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				457153B12425154B00F1CDC5 /* PEIArtistDetailViewController.m in Sources */,
-				457153B524251CF000F1CDC5 /* PEIAritst.m in Sources */,
+				457153BC24252D4E00F1CDC5 /* PEIArtistController.m in Sources */,
+				457153B524251CF000F1CDC5 /* PEIArtist.m in Sources */,
 				457153AE2425153600F1CDC5 /* PEIArtistTableViewController.m in Sources */,
 				457153942425130B00F1CDC5 /* AppDelegate.m in Sources */,
 				457153B8242523E500F1CDC5 /* PEIAritst+NSJSONSerialization.m in Sources */,
