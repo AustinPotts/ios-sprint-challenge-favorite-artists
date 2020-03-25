@@ -13,6 +13,7 @@
 
 @interface PEIArtistTableViewController ()
 
+// Wrong Array, Use Model COntroller Object Count Similar to Swift 
 @property NSMutableArray *tempArtists;
 @property PEIArtistController *artistController;
 
@@ -44,6 +45,7 @@
     [self.tempArtists removeAllObjects];
     self.tempArtists = [self.artistController artistArray];
     [self.tableView reloadData];
+    NSLog(@"Artist controller.artist.count %lu", (unsigned long)self.artistController.artists.count);
 }
 
 
@@ -53,13 +55,13 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.tempArtists.count;
+    return self.artistController.artists.count;
 
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ArtistCell" forIndexPath:indexPath];
     
-    PEIArtist *artist = self.tempArtists[indexPath.row];
+    PEIArtist *artist = self.artistController.artists[indexPath.row];
     cell.textLabel.text = artist.artistName;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)artist.formedYear];
     return cell;
@@ -73,7 +75,7 @@
            NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
            PEIArtistDetailViewController *detailVC = segue.destinationViewController;
         detailVC.controller = self.artistController;
-          detailVC.artist = [self tempArtists][indexPath.row];
+        detailVC.artist = self.artistController.artists[indexPath.row];
        }
        
        if ([segue.identifier isEqualToString:@"AddArtistSegue"]) {

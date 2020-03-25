@@ -35,7 +35,9 @@
 -(void)saveArtist:(PEIArtist *)artistRetrieved {
     if (artistRetrieved) {
         NSData *data = [NSJSONSerialization dataWithJSONObject:[artistRetrieved artistData] options:0 error:nil];
+        
         NSURL *directory = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:YES error:nil];
+        
         NSURL *url = [[directory URLByAppendingPathComponent:self.artist.artistName] URLByAppendingPathExtension:@"json"];
         [data writeToURL:url atomically:YES];
     } else {
@@ -48,7 +50,8 @@
 //Configure logic for this in helper fucntion
 - (IBAction)saveButtonTapped:(id)sender {
     if (self.artist) {
-           [self saveArtist:self.artist];
+        [self saveArtist:self.artist];
+       // [self.controller.artists addObject:self.artist];
            [self.navigationController popToRootViewControllerAnimated:true];
        } else {
            NSLog(@"Invalid Artist");
@@ -75,7 +78,10 @@
         } else {
             dispatch_async(dispatch_get_main_queue(), ^{
                 self.artist = receivedArtist;
+                NSLog(@"self.artistName: %@", self.artist.artistName);
                 [self updateViews];
+                
+                
                 
             });
         }

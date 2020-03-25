@@ -64,11 +64,15 @@ static NSString *baseURL = @"https://www.theaudiodb.com/api/v1/json/1/search.php
         // Checking if we have values, if so then Init with Dictionary
         if (jsonDictionary != (id) [NSNull null]){
             PEIArtist *artist = [[PEIArtist alloc] initWithDictionary:jsonDictionary[0]];
-            [self.artists  addObject:artist];
+            
+            // You only want an object added when you hit the save button
+           // [self.artists  addObject:artist];
             completionBlock(artist, nil);
         }
         NSLog(@"error: %@", error);
-        completionBlock(nil, error);
+        
+        // ERROR: This completion block returns nil instead of artist 
+       // completionBlock(nil, error);
     }];
     [task resume];
 }

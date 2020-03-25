@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Method Declaration for Init of Artist
 -(instancetype)initWithArtistName:(NSString *)name
-biography:(NSString *)bio
+                        biography:(NSString *)bio
                     andFormedYear:(int)year;
 
 @end
